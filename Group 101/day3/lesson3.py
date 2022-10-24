@@ -10,14 +10,16 @@ num3 = int(input("type number three: "))
 
 
 
-sum = 0
-if num1 % 2 ==0: 
-    sum += num1
+def odd_sum(num1, num2 , num3):
+    sum = 0
+    if num1 % 2 ==1: 
+        sum += num1
 
-if num2 % 2 ==0:
-    sum += num2
-if num3 % 2 ==0:
-    sum += num3
+    if num2 % 2 ==1:
+       sum += num2
+    if num3 % 2 ==1:
+       sum += num3
+       print(sum)
 
-print(sum)  
+odd_sum(num1, num2 , num3)
 
